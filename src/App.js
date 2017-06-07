@@ -12,7 +12,6 @@ class App extends Component {
 
     numberClick(v) {
         let records = this.state.record;
-        console.log(this.state);
         records.push({value:parseInt(v), operator:(_.last(records)).operator});
         this.setState({record:records});
     }
